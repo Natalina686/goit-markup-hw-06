@@ -211,15 +211,6 @@ button {
   }
 }
 
-
-@media screen and (min-width: 768px) {
-  .adress-list {
-    display: flex;
-    flex-direction: column;
-    gap: 12px;
-  }
-}
-
 @media screen and (min-width: 1158px) {
   .adress-list {
     flex-direction: row;
@@ -897,22 +888,12 @@ footer {
   }
 }
 
-@media screen and (min-width: 768px) {
-  .logo-link {
-    align-self: start;
-  }
-}
 
 .footer-desc {
   line-height: 1.5;
   text-align: left;
   letter-spacing: 0.02em;
   max-width: 264px;
-}
-
-@media screen and (min-width: 768px) {
-  .footer-desc {
-  }
 }
 
 @media screen and (min-width: 1158px) {
@@ -1408,4 +1389,41 @@ footer {
   background-color: var(--cl-iris);
   border: none;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.container {
+  max-width: 320px; /* Для мобільних */
+  margin: 0 auto;
+  padding: 0 16px;
+}
+
+@media screen and (min-width: 768px) {
+  .container {
+      max-width: 768px; /* Для планшетів */
+  }
+}
+
+@media screen and (min-width: 1158px) {
+  .container {
+      max-width: 1158px; /* Для десктопів */
+      padding: 0 15px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  
+  .address-list {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    padding: 0;
+}
+
+.address-list-item {
+  margin-right: 0;
+}
+
+.address-list a {
+  padding: 0;
+}
 }
