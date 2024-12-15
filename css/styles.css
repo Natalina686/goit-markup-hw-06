@@ -466,8 +466,8 @@ button {
 
 .benefits-list {
   display: flex;
-  gap: 24px;
-  justify-content: center;
+  flex-direction: column;
+  gap: 72px;
 }
 
 @media screen and (min-width: 768px) {
@@ -486,8 +486,8 @@ button {
 }
 
 .benefits-item {
-width: 264px;
-height: 104px;
+  display: flex;
+  flex-direction: column;
 }
 
 @media screen and (min-width: 768px) {
@@ -512,6 +512,10 @@ height: 104px;
   background-color: var(--cl-cloud);
   border-radius: 4px;
   border: 1px solid rgba(142, 143, 153, 1)
+}
+
+.benefits-item-content {
+  display: none;
 }
 
 @media screen and (min-width: 1158px) {
